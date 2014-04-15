@@ -1,4 +1,4 @@
 jhu-data-science
 ================
 
-John Hopkins University's Data Science Specialization offerings on Coursera
+Johns Hopkins University's Data Science Specialization offerings on Coursera
