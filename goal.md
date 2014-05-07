@@ -24,11 +24,10 @@ I am eager to become an data expert, or data scientist, by learning the courses 
 * Tools
   * R programming (Analytics)
   * R plotting (Visualiziation)
+  * R Studio (Development)
+  * Github (Version Control)
 * Statistics
   * Regression 
   * Bayesian
   
 I'm expected to take three courses at a time, and finish all of them in July. I also plan to write summary notes for each of them as well as all of them as a whole.
-
-God bless me.
-
