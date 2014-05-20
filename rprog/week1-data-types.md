@@ -163,7 +163,7 @@ as.numeric(x)  ## get warning
 ```
 
 ```
-## Warning: NAs introduced by coercion
+## Warning: 强制改变过程中产生了NA
 ```
 
 ```
@@ -183,7 +183,7 @@ as.complex(x)
 ```
 
 ```
-## Warning: NAs introduced by coercion
+## Warning: 强制改变过程中产生了NA
 ```
 
 ```

@@ -1,7 +1,7 @@
 Reading and Writing Data
 ========================
 
-#### Reading data
+### reading data
 
 - `read.table` and `read.csv`: reading tabular data
 - `readLines`: reading lines of a text file
@@ -10,7 +10,7 @@ Reading and Writing Data
 - `load`: reading in saved workspaces
 - `unserialized`: reading single `R` objects in binary form
 
-#### Writing data
+#### writing data
 
 - `write.table`
 - `writeLines`
@@ -50,7 +50,7 @@ tabAll <- read.table("datatable.txt", colClasses = classes)
 
 #### calculate memory
 
-A data frame with 1,500,000 rows and 120 columns, all of which are numeric. Normally need twice the memory to `read.table`.
+A data frame with 1,500,000 rows and 120 columns, all of which are numeric. Normally need twice the memory to `rea.
 
 ```
 1,500,000 x 120 x 8 bytes/numeric
@@ -60,3 +60,103 @@ A data frame with 1,500,000 rows and 120 columns, all of which are numeric. Norm
 = 1.34GB
 ```
 
+### textual formats
+
+- `dump` and `dput` are useful because the result textual format is edit-able and recoverable from corruption
+- `dump` and `dput` preserve the *metadata*
+- Textual formats can work much better with version control programs like svn or git
+- Textual formats adhere to the "Unix philosophy"
+
+
+```r
+y <- data.frame(a = 1, b = "a")
+dput(y)
+```
+
+```
+## structure(list(a = 1, b = structure(1L, .Label = "a", class = "factor")), .Names = c("a", 
+## "b"), row.names = c(NA, -1L), class = "data.frame")
+```
+
+```r
+dput(y, file = "y.R")
+new.y <- dget("y.R")
+new.y
+```
+
+```
+##   a b
+## 1 1 a
+```
+
+
+
+```r
+x <- "foo"
+y <- data.frame(a = 1, b = "a")
+dump(c("x", "y"), file = "data.R")
+rm(x, y)
+source("data.R")
+y
+```
+
+```
+##   a b
+## 1 1 a
+```
+
+```r
+x
+```
+
+```
+## [1] "foo"
+```
+
+
+### interfaces to the outside world
+
+- `file`: opens a connection to a file
+- `gzfile`: opens a connection to a file compressed with `gzip`
+- `bzfile`: opens a connection to a file compressed with `bzip2`
+- `url`: opens a connection to a webpage
+
+
+```r
+str(file)
+```
+
+```
+## function (description = "", open = "", blocking = TRUE, encoding = getOption("encoding"), 
+##     raw = FALSE)
+```
+
+
+- `"r"`: read only
+- `"w"`: writing (and initializing a new file)
+- `"a"`: appending
+- `"rb"`, `"Wb"`, `"ab"` reading, writing, or appending in binary mode (Windows)
+
+```
+con <- file("foo.txt", "r")
+data <- read.csv(con)
+close(con)
+```
+
+is the same as
+
+```
+data <- read.csv("foo.txt")
+```
+
+```
+con <- gzfile("words.gz")
+x <- readLines(con, 10)
+x
+```
+
+```
+con <- url("http://www.jhsph.edu", "r")
+x <- readLines(con)
+head(x)
+```
