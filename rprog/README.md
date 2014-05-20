@@ -1,15 +1,16 @@
 R Programming
 =============
 
-Coursera MOOC offering by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD
+Coursera MOOC by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD
 
 ### Contents
 - Week 1:
   - overview of R
   - [data types and objects](week1-data-types.md)
-  - reading and writing data
+  - [subsetting](week1-subsetting.md)
+  - [reading and writing data](week1-read-write.md)
 - Week 2
-  - control structures
+  - [control structures](week2-control.md)
   - functions
   - scoping rules
   - dates and times
