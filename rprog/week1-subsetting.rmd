@@ -1,0 +1,30 @@
+Subsetting
+==========
+
+- `[`: returns an object of the same class, can be used to select more than one element
+- `[[`: used to extract elements of a list or a data frame; it can only be used to extrat a single element and the class of the returned object will not necessarily be a list or data frame
+- `$`: used to extract elemetns of a list or data frame by name; semantics are similar to that of `[[`
+
+```{r}
+x <- c("a", "b", "c", "d")
+x[1]
+x[1:4]
+x[x > "a"]
+u <- x > "a"
+u
+x[u] # select elments that are larger than "a"
+```
+
+#### subsetting a matrix
+
+```{r}
+x <- matrix(1:6, 2, 3)
+x[1, 2] # returns a vector of length 1 rather than a 1x1 matrix
+x[1, 2, drop=FALSE] # returns a 1x1 matrix
+
+x[, 2] # omit indices
+x[1, ] # returns a vector
+x[1, , drop=FALSE] # returns a matrix
+```
+
+- `drop=FALSE`: returns a matrix rather than a vector
