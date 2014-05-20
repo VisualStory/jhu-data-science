@@ -11,7 +11,7 @@ Coursera MOOC by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD
   - [reading and writing data](week1-read-write.md)
 - Week 2
   - [control structures](week2-control.md)
-  - [functions](week2-function.md)
+  - [functions](week2-functions.md)
   - scoping rules
   - dates and times
 - Week 3
