@@ -167,7 +167,7 @@ cameraDataSubset <- read.xlsx("./data/cameras.xlsx", sheetIndex = 1,
     - end tags </section>
     - empty tags <line-break />
     - attributes are components
-      - `<img src="image.jpg" alt="image">
+      - `<img src="image.jpg" alt="image">`
 	
 ```
 library(XML)
