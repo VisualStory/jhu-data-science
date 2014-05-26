@@ -5,7 +5,7 @@ Johns Hopkins University's Data Science Specialization offerings on Coursera
 
 ### Contents
 
-* [The Data Scientist’s Toolbox](toolbox/README.md)
+* [The Data Scientist’s Toolbox](toolbox)
 * [R Programming](rprog/README.md)
 * [Getting and Cleaning Data](getdata/README.md)
 * Exploratory Data Analysis
