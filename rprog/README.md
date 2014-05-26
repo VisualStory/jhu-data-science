@@ -4,7 +4,7 @@ R Programming
 Coursera MOOC by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD
 
 ### Contents
-- Week 1:
+- Week 1
   - overview of R
   - [data types and objects](week1-data-types.md)
   - [subsetting](week1-subsetting.md)
