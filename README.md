@@ -1,5 +1,5 @@
-jhu-data-science
-================
+Data Science Specialization
+===========================
 
 Johns Hopkins University's Data Science Specialization offerings on Coursera
 
@@ -10,7 +10,7 @@ Johns Hopkins University's Data Science Specialization offerings on Coursera
 * [Getting and Cleaning Data](getdata/README.md)
 * Exploratory Data Analysis
 * Reproducible Research
-* Statistical Inference
+* [Statistical Inference](statinference/README.md)
 * Regression Models
 * Practical Machine Learning
 * Developing Data Products
