@@ -6,12 +6,12 @@ Coursera MOOC by Roger D. Peng, PhD, Jeff Leek, PhD, Brian Caffo, PhD
 ### Contents
 - Week 1
   - overview of R
-  - [data types and objects](week1-data-types.md)
-  - [subsetting](week1-subsetting.md)
-  - [reading and writing data](week1-read-write.md)
+  - [data types and objects](week1/data-types.md)
+  - [subsetting](week1/subsetting.md)
+  - [reading and writing data](week1/read-write.md)
 - Week 2
-  - [control structures](week2-control.md)
-  - [functions](week2-functions.md)
+  - [control structures](week2/control.md)
+  - [functions](week2/functions.md)
   - scoping rules
   - dates and times
 - Week 3
