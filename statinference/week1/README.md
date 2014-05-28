@@ -25,11 +25,11 @@ Week 1
 
 - **PMF**: probability mass functions
   - a probability mass function evaluated at a value corresponding to the probability that a random variable takes that value
-  1. $p(x) \geq 0$ for all $x$
-  2. $\sum_{x} p(x) = 1$
+  1. ![$p(x) \geq 0$](http://latex.codecogs.com/gif.latex?p%28x%29%20%5Cgeq%200) for all x
+  2. ![$\sum_{x} p(x) = 1$](http://latex.codecogs.com/gif.latex?%5Csum_%7Bx%7D%20p%28x%29%20%3D%201)
 
 - **PDF**: probability density functions
   - a probability density function is a function associated with a continuous random variable
   - areas under pdfs correspond to probability for that random variable
-  1. $f(x) \geq 0$ for all $x$
-  2. The area under $f(x)$ is one.
+  1. ![$f(x) \geq 0$](http://latex.codecogs.com/gif.latex?f%28x%29%20%5Cgeq%200) for all x
+  2. The area under f(x) is one.
