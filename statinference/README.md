@@ -3,7 +3,7 @@ Statistical Inference
 
 ### Contents
 
-- Week 1: probability and probability distributions
+- [Week 1: probability and probability distributions](week1/)
   1. Introduction
   2. Probability
     - Basic probabilities
