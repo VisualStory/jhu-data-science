@@ -34,11 +34,11 @@ Week 1
   1. ![$f(x) \geq 0$](http://latex.codecogs.com/gif.latex?f%28x%29%20%5Cgeq%200) for all x
   2. The area under f(x) is one.
 
-### Destribution functions and quantiles
+### Distribution functions and quantiles
   
 - **CDF**: Cumulative Distribution Function
-  - F(x) = P(X<=x)
-  - survival function: S(x) = P(X>x)
+  - ![F(x)=P(X\leq{x})](http://latex.codecogs.com/gif.latex?F%28x%29%3DP%28X%5Cleq%7Bx%7D%29)
+  - survival function: ![S(x)=P(X>x)](http://latex.codecogs.com/gif.latex?S%28x%29%3DP%28X%3Ex%29)
   - S(x)=1-F(x)
   - for continuous random variables, the PDF is the derivative of the CDF
 
@@ -53,7 +53,7 @@ Week 1
   - the expected value or mean of a random variable is the center of its distribution
 
 - for discrete random variable X with PMF p(x)
-  - E[X] = \sum_x{xp(x)} where the sum is taken over the possible values of x
+  - ![E[X]=\sum_xxp(x)](http://latex.codecogs.com/gif.latex?E%5BX%5D%3D%5Csum_xxp%28x%29) where the sum is taken over the possible values of x
   - E[X] represents the center of mass of a collection of locations and weights
 
 - for continuous random variable, X with density f, the expected value is
@@ -78,17 +78,17 @@ Let xi for i,...,n be a collection of random variables, each with a distribution
 
 - **the variance** of a random variable is a measure of spread
   - if X is a random variable with mean mu, the variance of X is defined as the expected (squared) distance from the mean
-  Var(X) = E[(x-mu)^2]
+  ![Var(x)=E[(x-\mu)^2]](http://latex.codecogs.com/gif.latex?Var%28x%29%3DE%5B%28x-%5Cmu%29%5E2%5D)
   - convenient compuational form
-  Var(X) = E[X^2] - E[X]^2
-  Here E[y]= \sum_x yp_y(x)
-  - if a is constance then Var(aX) = a^2 Var(x)
+  ![Var(X)=E[X^2]-E[X]^2](http://latex.codecogs.com/gif.latex?Var%28X%29%3DE%5BX%5E2%5D-E%5BX%5D%5E2)
+  Here ![E[y]=\sum_xyp_y(x)](http://latex.codecogs.com/gif.latex?E%5By%5D%3D%5Csum_xyp_y%28x%29)
+  - if a is constance then ![Var(aX)=a^2Var(X)](http://latex.codecogs.com/gif.latex?Var%28aX%29%3Da%5E2Var%28X%29)
   - the square root of the variance is called the **standard deviation**
   - the standard deviation has the same units as X
   
 - Interpreting variances
   - Chebyshev's inequality
-  P(|X-mu|>=ksigma)<=1/k^2
+  ![P(|X-\mu|>=k\sigma)\leq{\frac{1}{k^2}}](http://latex.codecogs.com/gif.latex?P%28%7CX-%5Cmu%7C%3E%3Dk%5Csigma%29%5Cleq%7B%5Cfrac%7B1%7D%7Bk%5E2%7D%7D)
   - IQs are often said to be distributed with a mean of 100 and a sd of 15
   
 ### Independence
