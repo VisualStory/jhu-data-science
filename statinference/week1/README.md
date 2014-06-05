@@ -58,6 +58,7 @@ Week 1
 
 - for continuous random variable, X with density f, the expected value is
   - E[X] = the area under the function tf(t)
+  - ![E[X]=\int_{-\infty}^{\infty}{xf(x)}dx](http://latex.codecogs.com/gif.latex?E%5BX%5D%3D%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%7Bxf%28x%29%7Ddx)
   - this definition borrows from the definition of center of mass for a continuous body
 
 ### Rules for expected values
